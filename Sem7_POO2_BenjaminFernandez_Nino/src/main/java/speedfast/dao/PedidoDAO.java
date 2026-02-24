@@ -52,7 +52,6 @@ public class PedidoDAO {
                         rs.getString("direccion"),
                         rs.getString("tipo")
                 );
-                // Aquí podrías agregar un setter para el estado si lo necesitas en la vista
                 lista.add(p);
             }
         } catch (SQLException e) {
@@ -60,4 +59,5 @@ public class PedidoDAO {
         }
         return lista;
     }
+
 }
